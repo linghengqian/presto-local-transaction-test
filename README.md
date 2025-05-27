@@ -1,6 +1,6 @@
 # presto-local-transaction-test
 
-- For https://github.com/apache/shardingsphere/pull/35504 .
+- For https://github.com/apache/shardingsphere/pull/35504 and https://github.com/prestodb/presto/issues/25204 .
 - Execute the following PowerShell 7 command on the `Windows 11 Home 24H2` instance with `PowerShell/PowerShell`,
   `version-fox/vfox`, `git-for-windows/git` and `rancher-sandbox/rancher-desktop` installed.
 
