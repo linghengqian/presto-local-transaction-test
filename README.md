@@ -18,7 +18,7 @@ cd ./presto-local-transaction-test/
 
 ```shell
 PS D:\TwinklingLiftWorks\git\public\presto-local-transaction-test> ./mvnw clean test -T 1C
-[INFO] Scanning for projects...
+[INFO] Scanning for projects...       
 [INFO] 
 [INFO] Using the MultiThreadedBuilder implementation with a thread count of 16
 [INFO] 
@@ -29,7 +29,7 @@ PS D:\TwinklingLiftWorks\git\public\presto-local-transaction-test> ./mvnw clean 
 [INFO] 
 [INFO] --- clean:3.2.0:clean (default-clean) @ presto-local-transaction-test ---
 [INFO] Deleting D:\TwinklingLiftWorks\git\public\presto-local-transaction-test\target
-[INFO] 
+[INFO]
 [INFO] --- resources:3.3.1:resources (default-resources) @ presto-local-transaction-test ---
 [INFO] skip non existing resourceDirectory D:\TwinklingLiftWorks\git\public\presto-local-transaction-test\src\main\resources
 [INFO]
@@ -50,10 +50,10 @@ PS D:\TwinklingLiftWorks\git\public\presto-local-transaction-test> ./mvnw clean 
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.github.linghengqian.PrestoTest
-5月 27, 2025 11:12:37 上午 org.junit.jupiter.engine.descriptor.AbstractExtensionContext lambda$createCloseAction$1
+6月 15, 2025 4:16:22 下午 org.junit.jupiter.engine.descriptor.AbstractExtensionContext lambda$createCloseAction$1
 警告: Type implements CloseableResource but not AutoCloseable: org.testcontainers.junit.jupiter.TestcontainersExtension$StoreAdapter
-[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.72 s <<< FAILURE! -- in com.github.linghengqian.PrestoTest
-[ERROR] com.github.linghengqian.PrestoTest.assertLocalTransactions -- Time elapsed: 15.56 s <<< FAILURE!
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.65 s <<< FAILURE! -- in com.github.linghengqian.PrestoTest
+[ERROR] com.github.linghengqian.PrestoTest.assertLocalTransactions -- Time elapsed: 15.44 s <<< FAILURE!
 java.lang.AssertionError:
 
 Expected: is <true>
@@ -63,8 +63,8 @@ Expected: is <true>
         at com.github.linghengqian.PrestoTest.assertRollbackWithTransactions(PrestoTest.java:97)
         at com.github.linghengqian.PrestoTest.assertLocalTransactions(PrestoTest.java:38)
         at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-        at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-        at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 
 [INFO] 
 [INFO] Results:
@@ -79,8 +79,8 @@ Expected: is <true>
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  18.207 s (Wall Clock)
-[INFO] Finished at: 2025-05-27T11:12:38+08:00
+[INFO] Total time:  19.088 s (Wall Clock)
+[INFO] Finished at: 2025-06-15T16:16:23+08:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test) on project presto-local-transaction-test: There are test failures.
 [ERROR]

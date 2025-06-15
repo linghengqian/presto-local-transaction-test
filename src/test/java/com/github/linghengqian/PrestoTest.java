@@ -24,7 +24,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @Testcontainers
 public class PrestoTest {
     @Container
-    private final GenericContainer<?> container = new GenericContainer<>("prestodb/presto:0.292")
+    private final GenericContainer<?> container = new GenericContainer<>("prestodb/presto:0.293")
             .withExposedPorts(8080)
             .withCopyFileToContainer(
                     MountableFile.forClasspathResource("iceberg.properties"),
